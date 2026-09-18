@@ -35,11 +35,25 @@ void testSingleElement() {
     bool result = isSorted(arr, 1);
     assert(result == true);
 }
+//testing descending array
+void testDescendingArray() {
+    int arr[] = {5,4,3,2,1};
+    bool result = isSorted(arr, 5);
+    assert(result == false);
+}
+//testing negative values
+void testNegativevalues() {
+    int arr[] = {4,-1,2,7,-9};
+    bool result = isSorted(arr, 5);
+    assert(result == false);
+}
 int main(){
     testSortedArray();
     testUnSortedArray();
     testDuplicatevalues();
     testSingleElement();
+    testDescendingArray();
+    testNegativevalues();
     cout << "All tests passed!" << endl;
     return 0;
 }
