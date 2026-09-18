@@ -23,9 +23,23 @@ void testUnSortedArray() {
     bool result = isSorted(arr, 5);
     assert(result == false);
 }
+//testing duplicate values
+void testDuplicatevalues() {
+    int arr[] = {4,4,1,5,2};
+    bool result = isSorted(arr, 5);
+    assert(result == false);
+}
+//testing single element
+void testSingleElement() {
+    int arr[] = {1};
+    bool result = isSorted(arr, 1);
+    assert(result == true);
+}
 int main(){
     testSortedArray();
     testUnSortedArray();
+    testDuplicatevalues();
+    testSingleElement();
     cout << "All tests passed!" << endl;
     return 0;
 }

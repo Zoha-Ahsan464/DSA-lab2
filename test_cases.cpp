@@ -6,7 +6,7 @@ void testSortedArray() {
 void testUnSortedArray() {
     int arr[] = {4,3,1,5,2};
     bool result = isSorted(arr, 5);
-    assert(result == true);
+    assert(result == false);
 }
 void testDuplicatevalues() {
     int arr[] = {4,4,1,5,2};
