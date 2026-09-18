@@ -2,11 +2,7 @@
 using namespace std;
 
 int main() {
-    //for dynamic array size is not constant
-    int size;
-    //taking size as an input
-    cout<< "Enter the size of array: ";
-    cin >> size;
+    const int size = 20;
     //dynamic array
     int* salArray = new int[size];
 
